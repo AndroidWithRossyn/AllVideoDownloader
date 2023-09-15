@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_6dp" />
+            <stroke android:width="1dp" android:color="@color/color2" />
+        </shape>
+    </item>
+</selector>

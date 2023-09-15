@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="3dp"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RLM">
+
+                <ImageView
+                    android:id="@+id/pcw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:id="@+id/iv_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_play1"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="-8dp"
+                    android:buttonTint="@color/white"
+                    android:button="@drawable/checkbox_layout1"
+                    android:focusable="false"
+                    android:visibility="gone"
+                    android:focusableInTouchMode="false"
+                    android:shadowColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/dowload"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_downloderr"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RLM"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradientbt"
+                android:backgroundTint="@color/main_color3"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/Download"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

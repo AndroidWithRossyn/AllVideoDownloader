@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_homepagebg"
+        tools:context=".Activity.SettingsActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_bg">
+
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_left" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/TVTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="@dimen/_25dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/black">
+
+                <LinearLayout
+                    android:id="@+id/native_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/downloads_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_download_set" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Downloads"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_8dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pp_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_pp_set" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PrivacyPolicy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_8dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rateus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_rateus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate App"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_8dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_app_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_share_set" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Share"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="@color/white">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/native_ads"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:orientation="vertical" />-->
+<!--        </RelativeLayout>-->
+    </RelativeLayout>
+</layout>

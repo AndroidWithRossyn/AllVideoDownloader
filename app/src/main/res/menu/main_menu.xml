@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuaddalbum"
+        android:icon="@drawable/ic_add_folder"
+        android:title="Add Album" />
+    <item
+        android:id="@+id/menudelete"
+        android:icon="@drawable/ic_delete"
+        android:iconTint="@color/heading"
+        app:showAsAction="withText"
+        android:title="Delete" />
+</menu>

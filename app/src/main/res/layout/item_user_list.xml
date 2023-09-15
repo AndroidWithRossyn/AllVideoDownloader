@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/RLStoryLayout"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="1dp"
+        android:padding="2dp">
+
+        <com.video.music.downloader.statusandgallery.utils.CircleImageView
+            android:id="@+id/story_pc"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gradientbt"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/real_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/story_pc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/real_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

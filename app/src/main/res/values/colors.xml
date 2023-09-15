@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F44336</color>
+
+    <color name="main_color">#5BEFFE</color>
+    <color name="greyClr">#605E5E</color>
+    <color name="main_color2">#0093FF</color>
+    <color name="main_color3">#20B4FF</color>
+    <color name="dot_dark_screen1">#9E9D9D</color>
+
+
+    <color name="gray">#42000000</color>
+    <color name="welcome">#4B6CDF</color>
+    <color name="light_gray">#40D9D9D9</color>
+    <color name="gray_fifty">#80000000</color>
+    <color name="green">#329A87</color>
+    <color name="orange">#FF8D29</color>
+    <color name="blue">#46B9F8</color>
+    <color name="green_blue">#2EE4BE</color>
+    <color name="pink">#FF4BD6</color>
+    <color name="purple">#8E3DFB</color>
+    <color name="purple_pink">#F52C85</color>
+    <color name="light_green">#86C8BC</color>
+    <color name="green_yellow">#F2F147</color>
+    <color name="dark_blue">#154EC7</color>
+    <color name="dark_green">#48EC71</color>
+
+
+
+    <color name="theme">#32B46B</color>
+    <color name="premiumm">#FF9F00</color>
+    <color name="textcolor">#FFFFFF</color>
+    <color name="heading">#676767</color>
+    <color name="closetext">#C2BEBE</color>
+    <color name="hintOverLay">#242424</color>
+    <color name="background">#E9EAF0</color>
+    <color name="neumorph_shadowColorDark">#B0BDC8DF</color>
+    <color name="neumorph_shadowColorLight">#FFFFFF</color>
+    <color name="premium">#EC7A5A</color>
+
+
+
+    <color name="colorPrimary">#6167E6</color>
+    <color name="colorPrimaryDark">#3C42D5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="adsTagBg">#00A784</color>
+    <color name="iconSelectedColor">#FFFFFF</color>
+    <color name="backgroundd">#E5EFF1</color>
+    <color name="adsNativeBg">#191919</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <!-- dots inactive colors -->
+    <color name="colorshadow">#03A908F4</color>
+    <color name="colorshadow2">#0AA908F4</color>
+    <color name="colorstatasbar">#9D09EC</color>
+    <color name="colorbgSelct">#66323137</color>
+    <color name="color2">#B2B2B2</color>
+    <color name="txtClr">#4E4E4E</color>
+    <color name="radioBtn">#38DD35</color>
+    <color name="colorOnBackground">#A708F3</color>
+    <color name="dialog_txt">#434343</color>
+    <color name="bg_call">#80FCF5FF</color>
+    <color name="uncheckClr">#D1D1D6</color>
+    <color name="setxtClr">#595959</color>
+    <color name="viewBg">#F0CFFF</color>
+    <color name="lib_sb_color_normal_view">#E3E3E3</color>
+    <color name="lib_sb_stroke_color_normal_view">#D2D2D2</color>
+    <color name="lib_sb_color_checked_view">#4AD863</color>
+    <color name="lib_sb_stroke_color_checked_view">@color/lib_sb_color_checked_view</color>
+    <color name="lib_sb_color_thumb_view">#FFFFFF</color>
+    <color name="lib_sb_stroke_color_thumb_view">#D2D2D2</color>
+    <color name="roomClr">#FFC917</color>
+    <color name="text_shadow">#BABABA</color>
+
+    <color name="image_selected">#99004400</color>
+    <color name="image_not_selected">#00000000</color>
+</resources>

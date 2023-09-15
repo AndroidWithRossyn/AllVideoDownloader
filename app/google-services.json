@@ -1,0 +1,209 @@
+{
+  "project_info": {
+    "project_number": "748862838828",
+    "firebase_url": "https://ide-all-default-rtdb.firebaseio.com",
+    "project_id": "ide-all",
+    "storage_bucket": "ide-all.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748862838828:android:1afed76cef956b98b69989",
+        "android_client_info": {
+          "package_name": "com.callerscreen.wallpaper.locater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLxerkc-40vpqrpRN4L15lzFCeOgI51TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748862838828:android:1c8926619cf5a57eb69989",
+        "android_client_info": {
+          "package_name": "com.ide.photoeditor.youshoot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748862838828-5b9lrqksde5rd72jlg325jimar0dcst1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ide.photoeditor.youshoot",
+            "certificate_hash": "ddd6b94c1cd80a218defcb071dfb0d0044e53747"
+          }
+        },
+        {
+          "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLxerkc-40vpqrpRN4L15lzFCeOgI51TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748862838828:android:4c5d74b263be8924b69989",
+        "android_client_info": {
+          "package_name": "com.idedetect.detectify.realappone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748862838828-1i0v237kr2alj19bca3dbt4rr5ipvse3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idedetect.detectify.realappone",
+            "certificate_hash": "ddd6b94c1cd80a218defcb071dfb0d0044e53747"
+          }
+        },
+        {
+          "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLxerkc-40vpqrpRN4L15lzFCeOgI51TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748862838828:android:fc3a2a237985fcf5b69989",
+        "android_client_info": {
+          "package_name": "com.photoeditor.videomaker.pixelphoto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLxerkc-40vpqrpRN4L15lzFCeOgI51TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748862838828:android:1b9670b2686c7764b69989",
+        "android_client_info": {
+          "package_name": "com.video.music.downloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748862838828-dgi5dpto456b98b4es3d9ose681pn4m8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.video.music.downloader",
+            "certificate_hash": "ddd6b94c1cd80a218defcb071dfb0d0044e53747"
+          }
+        },
+        {
+          "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLxerkc-40vpqrpRN4L15lzFCeOgI51TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748862838828:android:78289b04d7b8021db69989",
+        "android_client_info": {
+          "package_name": "com.video.music.downloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLxerkc-40vpqrpRN4L15lzFCeOgI51TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748862838828-tiq55i685gq5ld099c54utgvm7hjjles.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

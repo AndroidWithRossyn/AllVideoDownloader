@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".videoplayer.VideoPlayerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/more_item_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="10dp"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_left" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/all_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:textAllCaps="false"
+                android:text="Video Player"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/category"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/menu_icon" />
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/more_item_toolbar"
+        android:background="@drawable/back_half_curve"
+        tools:context=".ui.MusicPlayerActivity">
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/nav_bottom_player"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/nav_bottom_player"
+            layout="@layout/nav_bottom_player"
+            android:visibility="gone"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            app:labelVisibilityMode="labeled"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/back_button_circle"
+            app:backgroundTint="@color/black"
+            android:elevation="10dp"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/menu_nav_bottom"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/more_item_toolbar"-->
+<!--        android:background="@drawable/back_half_curve"-->
+<!--        android:paddingTop="20dp">-->
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frame_layout"-->
+<!--            android:layout_above="@+id/rl"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="30dp"-->
+<!--            android:layout_height="170dp">-->
+<!--            <include-->
+<!--                android:id="@+id/nav_bottom_player"-->
+<!--                android:layout_above="@+id/nav_bottom_menu"-->
+<!--                layout="@layout/nav_bottom_player"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp" />-->
+
+<!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--                android:id="@+id/nav_bottom_menu"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                app:labelVisibilityMode="labeled"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:background="@drawable/back_button_circle"-->
+<!--                android:elevation="10dp"-->
+<!--                app:itemIconTint="@color/blue"-->
+<!--                app:itemTextColor="@color/blue"-->
+<!--                app:menu="@menu/menu_nav_bottom"/>-->
+
+<!--        </RelativeLayout>-->
+
+
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>

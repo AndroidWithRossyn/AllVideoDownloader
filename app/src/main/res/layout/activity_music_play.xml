@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_player_gradient"
+    tools:context=".music.MusicPlayActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/more_item_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back_button_circle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/purple" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/all_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/back"
+                android:gravity="center_vertical"
+                android:text="Music Player"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/category"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/menu_icon" />
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/back_half_curve"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:context=".Activities.SearchSongs">
+
+            <ListView
+                android:id="@+id/list_searchres"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/et_searchBox"
+                android:layout_centerInParent="true"
+                android:layout_above="@+id/textView4"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_searchPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_searchBox"
+                android:visibility="visible" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_searchPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll"
+                android:layout_below="@+id/tl_searchPage"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <Button
+                android:id="@+id/btn_searchBox"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/ic_err_search"
+                android:fontFamily="@font/poppins"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ms_info1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:srcCompat="@drawable/ic_err_search"
+                app:tint="@color/purple" />
+
+            <TextView
+                android:id="@+id/ms_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ms_info1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins"
+                android:text="Search Something"
+                android:textColor="@color/purple" />
+
+            <TextView
+                android:id="@+id/ms_info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ms_info2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Find your favorite song, album, and playlists."
+                android:textColor="@color/purple" />
+
+            <EditText
+                android:id="@+id/et_searchBox"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/curvature"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Search for an Album,Song,Playlist"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="14dp"
+                android:paddingTop="10dp"
+                android:paddingRight="45dp"
+                android:paddingBottom="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_urResStatus"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/et_searchBox"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/white"
+                android:fontFamily="@font/poppins"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:text="Your Search Results:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/btm_srch"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="2dp"
+                            android:onClick="sBtmSrch"
+                            android:src="@drawable/ic_btm_search"
+                            app:tint="@color/purple" />
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="4dp"
+                            android:text="Search"
+                            android:textColor="@android:color/black"
+                            android:textSize="9sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/btm_brws"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="2dp"
+                            android:layout_toRightOf="@+id/btm_srch"
+                            android:onClick="sBtmBrws"
+                            android:src="@drawable/ic_btm_browse_dull"
+                            app:tint="@color/purple" />
+
+                        <TextView
+                            android:id="@+id/textView46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="4dp"
+                            android:text="Browse"
+                            android:textColor="@android:color/black"
+                            android:textSize="9sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/btm_down"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="2dp"
+                            android:layout_toRightOf="@+id/btm_brws"
+                            android:onClick="sBtmDown"
+                            android:src="@drawable/ic_btm_downloads_dull"
+                            app:tint="@color/purple" />
+
+                        <TextView
+                            android:id="@+id/textView47"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="4dp"
+                            android:text="Downloads"
+                            android:textColor="@android:color/black"
+                            android:textSize="9sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/ll"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="7dp"
+                android:background="@android:color/darker_gray" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

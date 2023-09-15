@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="videourl_filters">
+        <item>mp4</item>
+        <item>video</item>
+        <item>googleusercontent</item>
+        <item>embed</item>
+        <item>m3u8</item>
+        <item>webm</item>
+    </string-array>
+
+    <string-array name="imageurl_filters">
+        <item>image</item>
+        <item>jpg</item>
+        <item>jpeg</item>
+        <item>gif</item>
+        <item>webp</item>
+    </string-array>
+
+    <string-array name="audiourl_filters">
+        <item>mpeg</item>
+        <item>mp3</item>
+    </string-array>
+
+    <string-array name="customised_searches">
+        <item>xhamster</item>
+        <item>pornhub</item>
+    </string-array>
+
+
+    <string-array name="ad_site_filters">
+        <item>taboola.com</item>
+        <item>googleadservices.com</item>
+    </string-array>
+
+    <string-array name="ristricted_sites">
+        <item>youtube.com</item>
+        <item>pornhub.org</item>
+    </string-array>
+</resources>

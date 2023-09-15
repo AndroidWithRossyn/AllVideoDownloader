@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/curvebt"
+    tools:context=".videoplayer.fragment.DeviceFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_above="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            <EditText-->
+<!--                android:id="@+id/sv_device_songs"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginHorizontal="10dp"-->
+<!--                android:layout_marginVertical="15dp"-->
+<!--                android:background="@drawable/back_button_circle"-->
+<!--                android:backgroundTint="#BEE4FA"-->
+<!--                android:hint="Search here.."-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingHorizontal="10dp"-->
+<!--                android:paddingVertical="5dp"-->
+<!--                android:textSize="15sp" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@id/sv_device_songs"-->
+<!--                android:layout_alignEnd="@id/sv_device_songs"-->
+<!--                android:layout_alignBottom="@id/sv_device_songs"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:scaleType="centerInside"-->
+<!--                android:src="@drawable/search_icon"-->
+<!--                app:tint="@color/black" />-->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_song_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_song_list" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/native_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

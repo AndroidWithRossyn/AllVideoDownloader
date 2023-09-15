@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/second_onboard"
+        tools:context=".statusandgallery.alldownloader.DownloadingActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back_button_circle">
+
+                    <ImageView
+                        android:id="@+id/imBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_back"
+                        app:tint="@color/theme" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/all_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/back"
+                    android:gravity="center_vertical"
+                    android:text="Video Downloader"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/category"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/menu_icon" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/back_half_curve"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/rl"
+            android:layout_height="match_parent">
+
+<!--            <include-->
+<!--                android:id="@+id/browser_toolbar"-->
+<!--                layout="@layout/browser_toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="50dp" />-->
+
+<!--            <com.anthonycr.progress.AnimatedProgressBar-->
+<!--                android:id="@+id/loadingPageProgress"-->
+<!--                style="@android:style/Widget.ProgressBar.Horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:background="#FFFFFF"-->
+<!--                android:max="100"-->
+<!--                android:progressDrawable="@drawable/loading_page_progress_status"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hello"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:id="@+id/b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Top Sites"
+                         android:layout_marginTop="5dp"
+                         android:layout_above="@+id/ll1"
+                         android:layout_marginStart="8dp"
+                         android:textStyle="bold"
+                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+     -->
+
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/rvFB"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_facebooknew"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Facebook"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rvInsta"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/instagram"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Instagram"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rvWhatsApp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_whatsapp"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Whatsapp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rvTwitter"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/twiter"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Twitter"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvChingari"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/ic_chingarinew" />-->
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/rvTikTok"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/tiktok"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Tiktok"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rvChingari"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/chingari"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Chingari"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rvShareChat"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/sharechat"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="ShareChat"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rvSnack"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/snack"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Snack Video"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvInsta"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/ic_instagramnew" />-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvShareChat"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/ic_sharechatnew" />-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvRoposo"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/pngroposo" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/rvMoj"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/moj"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Moj"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rvMitron"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/mitron"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Mitron"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rvLikee"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/likee"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Likee"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rvJosh"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/josh"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Josh"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvTwitter"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/ic_twwiternew" />-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvSnack"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/snackvideon" />-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvMX"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/mxtakatakn" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll3"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+                        <TextView
+                            android:id="@+id/rvMX"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/mx"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="MX Takatak"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/rvRoposo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/roposo"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:text="Roposo"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvLikee"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/likenewn" />-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvJosh"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/joshn" />-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/rvMoj"-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:padding="4dp"-->
+                        <!--                        android:src="@drawable/ic_mojnew" />-->
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+<!--            <WebView-->
+<!--                android:id="@+id/simpleWebView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="52dp"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_marginBottom="80dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/browser_toolbar"-->
+<!--                app:layout_constraintVertical_bias="0.0" />-->
+
+
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/download_fab"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:clickable="true"-->
+<!--                app:backgroundTint="@drawable/fab_color"-->
+<!--                app:fabSize="normal"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:srcCompat="@drawable/ic_downloder" />-->
+
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/download_video_fab"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="24dp"-->
+<!--                android:clickable="true"-->
+<!--                android:visibility="gone"-->
+<!--                app:fabSize="auto"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/download_fab"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/download_fab"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/download_fab"-->
+<!--                app:srcCompat="@drawable/ic_videodownloader" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/download_video_fab_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:background="@drawable/ic_back"-->
+<!--                android:paddingLeft="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="5dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="Add Alarm"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/download_video_fab"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/download_video_fab"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/download_video_fab" />-->
+
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/download_audio_fab"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="24dp"-->
+<!--                android:clickable="true"-->
+<!--                android:visibility="gone"-->
+<!--                app:fabSize="auto"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/download_video_fab"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/download_video_fab"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/download_video_fab"-->
+<!--                app:srcCompat="@drawable/ic_audio" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/download_audio_fab_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:background="@drawable/ic_back"-->
+<!--                android:paddingLeft="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="5dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="Add Person"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/download_audio_fab"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/download_audio_fab"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/download_audio_fab" />-->
+
+
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/download_images_fab"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="24dp"-->
+<!--                android:clickable="true"-->
+<!--                android:visibility="gone"-->
+<!--                app:fabSize="auto"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/download_audio_fab"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/download_audio_fab"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/download_audio_fab"-->
+<!--                app:srcCompat="@drawable/ic_download_image" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/download_images_fab_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:background="@drawable/rounded_back"-->
+<!--                android:paddingLeft="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="5dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="Add Person"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/download_images_fab"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/download_images_fab"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/download_images_fab" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/native_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>demo</key>
+        <value>Hello</value>
+    </entry>
+    <entry>
+        <key>demo1</key>
+        <value>Hii</value>
+    </entry>
+</defaultsMap>

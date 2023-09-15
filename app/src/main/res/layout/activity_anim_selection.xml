@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/video_call_gradient"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_button_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/dark_blue" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mRLTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/mProfilePic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:elevation="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/demo_img"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="2dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
+                    android:background="@drawable/full_curve_white"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:text="@string/profileInfo"
+                        android:textAppearance="@style/TextAppearance.MyApp.Subtitle2"
+                        android:textColor="@color/black" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/mRecylerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:text="@string/or"
+                        android:textAppearance="@style/TextAppearance.MyApp.Button"
+                        android:textColor="@color/greyClr" />
+
+                    <TextView
+                        android:id="@+id/mTxtChoosePic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_14dp"
+                        android:text="@string/chooseData"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.MyApp.Subtitle2"
+                        android:textColor="@color/dark_blue" />
+
+                    <TextView
+                        android:id="@+id/mTxtNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_marginStart="@dimen/_40dp"
+                        android:layout_marginTop="@dimen/_30dp"
+                        android:layout_marginEnd="@dimen/_40dp"
+                        android:layout_marginBottom="@dimen/_20dp"
+                        android:background="@drawable/bg_gradiant"
+                        android:gravity="center"
+                        android:text="@string/next"
+                        android:textAppearance="@style/TextAppearance.MyApp.Subtitle2"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="90dp">
+        <LinearLayout
+            android:id="@+id/native_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" />
+    </RelativeLayout>
+</RelativeLayout>

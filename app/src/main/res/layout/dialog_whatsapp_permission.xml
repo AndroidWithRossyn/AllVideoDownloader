@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-25dp"
+            android:elevation="10dp"
+            android:src="@drawable/circle_white"
+            app:layout_constraintBottom_toTopOf="@+id/crd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-30dp"
+            android:elevation="16dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_accessfile"
+            app:layout_constraintBottom_toTopOf="@+id/crd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@color/black" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:cardCornerRadius="11dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:text="Access Permissions"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/forgetpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:text="@string/allow_app_to_access_whatsapp_status_folder"
+                    android:textColor="#676767" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+
+                    <TextView
+                        android:id="@+id/tvAllow"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@drawable/gradientbt"
+                        android:backgroundTint="@color/black"
+                        android:elevation="6dp"
+                        android:gravity="center"
+                        android:text="Allow"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+    <!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/rectangle_white"-->
+    <!--        android:elevation="3dp"-->
+    <!--        android:layout_margin="5dp"-->
+    <!--        android:padding="10dp">-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:orientation="vertical">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="@string/allow_app_to_access_whatsapp_status_folder"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:layout_marginStart="10dp"-->
+    <!--                android:layout_marginEnd="10dp"-->
+    <!--                android:layout_marginTop="15dp"-->
+    <!--                android:textColor="@color/black" />-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvAllow"-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="15dp"-->
+    <!--                android:background="@drawable/rectangle_white"-->
+    <!--                android:backgroundTint="@color/colorPrimary"-->
+    <!--                android:gravity="center"-->
+    <!--                android:padding="15dp"-->
+    <!--                android:text="Allow Whatsapp"-->
+    <!--                android:textAllCaps="false"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="15sp" />-->
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+    <!--</layout>-->

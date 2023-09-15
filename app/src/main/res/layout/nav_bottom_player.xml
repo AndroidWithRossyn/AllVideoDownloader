@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_bottom_player"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    app:layout_constraintBottom_toTopOf="@+id/nav_bottom_menu">
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:id="@+id/sb_song_mp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:max="100"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:progressTint="@color/blue"
+        android:thumb="@drawable/seekbar_thumb"/>
+
+    <ImageView
+        android:id="@+id/iv_song_cover_mp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sb_song_mp"
+        android:src="@drawable/song_cover"
+        app:tint="@color/blue"
+        android:scaleType="centerInside"/>
+    <TextView
+        android:id="@+id/tv_song_title_mp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+        android:maxLines="1"
+        android:layout_marginStart="10dp"
+        android:text="@string/unknown"
+        android:layout_below="@id/sb_song_mp"
+        android:layout_toEndOf="@id/iv_song_cover_mp"
+        android:layout_toStartOf="@id/linear_panel_control"/>
+    <TextView
+        android:id="@+id/tv_song_artist_mp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_fifty"
+        android:textSize="11sp"
+        android:maxLines="1"
+        android:layout_marginStart="10dp"
+        android:text="@string/unknown"
+        android:layout_below="@id/tv_song_title_mp"
+        android:layout_toEndOf="@id/iv_song_cover_mp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_panel_control"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/sb_song_mp"
+        android:layout_alignParentEnd="true">
+        <ImageView
+            android:id="@+id/btn_previous_mp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/blue"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/previous"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:id="@+id/btn_play_mp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/pause_play"
+            app:tint="@color/blue"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/btn_next_mp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/next"
+            app:tint="@color/blue"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+</RelativeLayout>

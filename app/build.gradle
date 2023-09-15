@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 33
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.video.music.downloader"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+    packagingOptions {
+        merge "core.properties"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "API_YOUTUBE_URL", "\"https://www.googleapis.com/youtube/v3/\""
+            buildConfigField "String", "YOTUBE_DATA_TOKEN", "\"AIzaSyA5nIDiBD0xw4C66DIfZl20Y7durWfS370\""
+        }
+        release {
+            buildConfigField "String", "API_YOUTUBE_URL", "\"https://www.googleapis.com/youtube/v3/\""
+            buildConfigField "String", "YOTUBE_DATA_TOKEN", "\"AIzaSyBfHhqRqWmO5ziLfvApg2FM8ScCpQwSiCM\""
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.media:media:1.6.0'
+    implementation 'org.apache.commons:commons-lang3:3.9'
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'org.apache.commons:commons-collections4:4.3'
+    implementation project(path: ':m3u8lib')
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'com.google.android.gms:play-services-ads-lite:21.5.0'
+    implementation 'com.github.clans:fab:1.6.4'
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.room:room-common:2.5.1'
+    implementation 'androidx.room:room-runtime:2.5.1'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.1.2'
+    implementation 'com.google.firebase:firebase-config-ktx:21.3.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.1'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+//    implementation 'com.google.android.gms:play-services-ads-lite:21.5.0'
+
+    implementation 'com.anthonycr.progress:animated-progress:1.0'
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+    implementation 'com.github.stfalcon:frescoimageviewer:0.5.0'
+    implementation 'com.facebook.fresco:fresco:2.5.0'
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+    annotationProcessor 'androidx.room:room-compiler:2.5.1'
+
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.google.android.exoplayer:exoplayer:2.17.0'
+
+    // Lottie dependency
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    implementation 'com.github.fornewid:neumorphism:0.3.2'
+
+    implementation 'com.karumi:dexter:6.2.3'
+
+    implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+
+
+}

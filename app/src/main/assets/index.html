@@ -1,0 +1,116 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <style>
+		body,html{
+			background-color: #FFFFFF;
+		}
+            #tabs-swipe-demo{
+                position: fixed;
+                z-index: 99;
+                top: 0;
+            }
+
+                #test-swipe-1,#test-swipe-2{
+                    margin-top: 50px;
+                }
+                .col>.card>.card-body{
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+                .col>.card>.card-body>img{
+                    width: 50px;
+                }
+                .col>.card
+                {
+                    text-align: center;
+                }
+                .col{
+                    margin-bottom: 20px;
+                }
+        </style>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var sitesJson=[
+                    {"title":"facebook","site":"https://facebook.com"},
+                    {"title":"whatsapp","site":"https://web.whatsapp.com"},
+                    {"title":"instagram","site":"https://instagram.com"},
+                    {"title":"twitter","site":"https://twitter.com"},
+                    {"title":"TikTok","site":"https://TikTok.com"},
+                    {"title":"linkedin","site":"https://www.linkedin.com/"},
+                    {"title":"josh","site":"https://www.myjosh.in/"},
+                    {"title":"metacafe","site":"https://metacafe.com/"},
+                    {"title":"imdb","site":"https://www.imdb.com/"},
+                    {"title":"dailymotion","site":"https://www.dailymotion.com/"},
+                    {"title":"sharechat","site":"https://www.sharechat.com/"},
+                    {"title":"tumblr","site":"https://www.tumblr.com/"},
+                    {"title":"twitch","site":"https://www.twitch.tv/"},
+                    {"title":"bitchute","site":"https://www.bitchute.com/"},
+                    {"title":"bittube","site":"https://bittube.tv/"},
+                    {"title":"fansubs","site":"https://fansubs.tv/"},
+                    {"title":"flickr","site":"https://www.flickr.com/"},
+                    {"title":"ifunny","site":"https://ifunny.co/"},
+                    {"title":"imgur","site":"https://imgur.com/"},
+                    {"title":"izlesene","site":"https://izlesene.com/"},
+                    {"title":"ok.ru","site":"https://ok.ru/"},
+                    {"title":"pinterest","site":"https://pinterest.com/"},
+                    {"title":"reddit","site":"https://reddit.com/"},
+                    {"title":"rumble","site":"https://rumble.com/"},
+                    {"title":"onetvru","site":"https://www.1tv.ru/"},
+                    {"title":"9gag","site":"https://9gag.com"},
+                    {"title":"vlipsy","site":"https://vlipsy.com"},
+                
+                ];
+
+                var strim="";
+                for(var i=0; i < sitesJson.length;i++)
+                {
+                    strim+='                    <div class="col" onCLick="goTo(\''+ sitesJson[i].site +'\')">';
+                    strim+='                        <div class="card">';
+                    strim+='                            <div class="card-body">';
+                    strim+='                                <img src="images/'+sitesJson[i].title +'.webp" > <br>';
+                    strim+='                                ' + sitesJson[i].title;
+                    strim+='                            </div>';
+                    strim+='                        </div> ';
+                    strim+='                    </div>';
+                }
+                $('#mainSection').html(strim);
+            });
+
+            function goTo(site)
+            {
+                window.location.href=site;
+            }
+
+        </script>
+    </head>
+
+    <body>
+        
+        <div class="container" style="margin-top: 15px;margin-bottom: 15px;">
+<!--            <h5>Top sites</h5>-->
+                <div class="row" id="mainSection">
+
+                    <div class="col" >
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/Facebook.webp" > <br>
+                                Facebook
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    
+                </div>
+        </div>
+      
+        
+
+    </body>
+  </html>

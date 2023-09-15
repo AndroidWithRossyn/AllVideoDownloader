@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".music.SettingsAlbum">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="Download settings"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="Preferred Audio Quality :"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_set_kbps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <RadioButton
+                    android:id="@+id/set_320"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/purple"
+                    android:fontFamily="@font/poppins"
+                    android:tag="320"
+                    android:text="320kbps"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/set_160"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/purple"
+                    android:fontFamily="@font/poppins"
+                    android:tag="160"
+                    android:text="160kbps"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/set_96"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/purple"
+                    android:fontFamily="@font/poppins"
+                    android:tag="96"
+                    android:text="96kbps"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="Preferred Audio Format :"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_set_format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:weightSum="4">
+
+                <RadioButton
+                    android:id="@+id/set_m4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/purple"
+                    android:fontFamily="@font/poppins"
+                    android:tag="m4a"
+                    android:text="m4a"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/set_mp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/purple"
+                    android:fontFamily="@font/poppins"
+                    android:tag="mp3"
+                    android:text="mp3"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView89"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Default Download Directory :"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/set_change_dir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="change"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/set_down_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins"
+                android:text="/ALLINONE_DOWNLOADS/"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch_sub_folders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:checked="true"
+                android:fontFamily="@font/poppins"
+                android:shadowColor="@android:color/black"
+                android:text="Make Sub Folders"
+                android:textColor="@android:color/black"
+                android:textColorLink="#000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:thumbTint="#A4A4A4"
+                android:trackTint="#A4A4A4" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/setting_subfolders"
+                android:textColor="@android:color/black" />
+
+            <Switch
+                android:id="@+id/cb_hide_albumArt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:checked="true"
+                android:fontFamily="@font/poppins"
+                android:shadowColor="@android:color/black"
+                android:text="Hide Albumart files"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:thumbTint="#A4A4A4"
+                android:trackTint="#A4A4A4" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/albumart_settings_page"
+                android:textColor="@android:color/black" />
+
+            <Switch
+                android:id="@+id/cb_delete_albumArt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
+                android:shadowColor="@android:color/black"
+                android:text="Delete Albumart files after usage"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:thumbTint="#A4A4A4"
+                android:trackTint="#A4A4A4" />
+
+            <TextView
+                android:id="@+id/textVie2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/delete_albumart_settings"
+                android:textColor="@android:color/black" />
+
+            <Switch
+                android:id="@+id/switch_audio_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:checked="true"
+                android:fontFamily="@font/poppins"
+                android:shadowColor="@android:color/black"
+                android:text="Toggle Audio Tagging"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:thumbTint="#A4A4A4"
+                android:trackTint="#A4A4A4" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/settings_audio_tagging"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textVi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
+                android:text="FileName Preferences"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/textew27"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/cur_fn_format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins"
+                android:text="SongName[AlbumName]_kbps.format"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/fn_pref_con_AlbumName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:checked="true"
+                android:text="include AlbumName"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:thumbTint="#A4A4A4"
+                android:trackTint="#A4A4A4" />
+
+            <Switch
+                android:id="@+id/fn_pref_con_kbps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:checked="true"
+                android:text="include Kbps"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:thumbTint="#A4A4A4"
+                android:trackTint="#A4A4A4" />
+
+            <TextView
+                android:id="@+id/extVi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
+                android:text="Streaming Settings"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:alpha="0.5"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/extew27"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:alpha="0.5"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textVw24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="Preferred Streaming Quality :"
+                android:textColor="@android:color/black"
+                android:alpha="0.5"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_set_strm_kbps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <RadioButton
+                    android:id="@+id/set_strm_320"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/purple"
+                    android:fontFamily="@font/poppins"
+                    android:tag="320"
+                    android:text="320kbps"
+                    android:alpha="0.5"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/set_strm_160"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/purple"
+                    android:fontFamily="@font/poppins"
+                    android:tag="160"
+                    android:text="160kbps"
+                    android:alpha="0.5"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/set_strm_96"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/purple"
+                    android:fontFamily="@font/poppins"
+                    android:tag="96"
+                    android:text="96kbps"
+                    android:alpha="0.5"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/switch_strm_lyrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:checked="true"
+                android:fontFamily="@font/poppins"
+                android:shadowColor="@android:color/black"
+                android:text="Auto download lyrics"
+                android:textColor="@android:color/black"
+                android:textColorLink="#000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:thumbTint="#A4A4A4"
+                android:alpha="0.5"
+                android:trackTint="#A4A4A4" />
+
+            <TextView
+                android:id="@+id/textVie39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/settings_lyrics_download"
+                android:textColor="@android:color/black" />
+
+            <Switch
+                android:id="@+id/switch_strm_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
+                android:shadowColor="@android:color/black"
+                android:text="Auto Caching"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:alpha="0.5"
+                android:thumbTint="#A4A4A4"
+                android:trackTint="#A4A4A4" />
+
+            <TextView
+                android:id="@+id/textViw32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins"
+                android:alpha="0.5"
+                android:text="@string/settings_autochaching"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancel" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/music_button"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/rl"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/music_button"
+        android:text="cancel"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/rl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_save" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView40"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:background="@android:color/darker_gray"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textView57"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="90dp">
+        <LinearLayout
+            android:id="@+id/native_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

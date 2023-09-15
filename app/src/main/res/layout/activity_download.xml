@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RLTopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_bg"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/RLTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imBack"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_left" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/TVTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Downloads"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/RLTopLayout">
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/RLTab"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingStart="2dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingEnd="2dp">-->
+
+<!--                <com.google.android.material.tabs.TabLayout-->
+<!--                    android:id="@+id/tabs"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/ic_curvesearch"-->
+<!--                    app:tabGravity="fill"-->
+<!--                    app:tabIndicatorColor="@color/main_color3"-->
+<!--                    app:tabIndicatorHeight="0dp"-->
+<!--                    app:tabMode="scrollable"-->
+<!--                    app:tabPaddingEnd="2dp"-->
+<!--                    app:tabPaddingStart="2dp"-->
+<!--                    app:tabRippleColor="@null"-->
+<!--                    app:tabSelectedTextColor="@color/main_color3"-->
+<!--                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"-->
+<!--                    app:tabTextColor="@color/black" />-->
+<!--            </RelativeLayout>-->
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/rl" />
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/native_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
+
+

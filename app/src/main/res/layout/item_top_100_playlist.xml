@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp">
+
+        <ImageView
+            android:id="@+id/iv_song_cover_top_100"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/song_cover" />
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:src="@drawable/video_play_button"
+            app:tint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_song_title_top_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crd"
+        android:layout_alignStart="@+id/crd"
+        android:layout_alignEnd="@+id/crd"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:text="@string/unknown" />
+
+    <TextView
+        android:id="@+id/tv_song_artist_top_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_song_title_top_100"
+        android:layout_alignStart="@+id/crd"
+        android:layout_alignEnd="@+id/crd"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAllCaps="false"
+        android:textColor="@color/gray_fifty"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        tools:text="@string/unknown" />
+</RelativeLayout>
