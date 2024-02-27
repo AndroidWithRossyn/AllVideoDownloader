@@ -1,33 +1,24 @@
-<p align="center">
-  <h1 align="center">All Video Downloader App 2023</h1>
-  <h3>Free to use, No ads, Open Source Project</h3>
-<br>
-<br>
+<h1 align="center">All Video Downloader App 2023</h1>
+  
+<div align="center">
 
-- ⚡ If You want to join us than message on <a href="https://wa.me/+919694260426/">
-  Whatsapp</a> , <a href="banrossyn@gmail.com">Mail</a>
-  &
-  <a href="https://t.me/banrossyn">Telegram</a>.
+![Stars](https://img.shields.io/github/stars/AndroidWithRossyn/AllVideoDownloader2023)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndroidWithRossyn/AllVideoDownloader2023)
+![pv](https://pageview.vercel.app/?github_user=AllVideoDownloader2023)
+<a href="https://t.me/banrossyn" target="_blank"><img src="https://img.shields.io/badge/Telegram-%40banrossyn-28a8ea"></a>
+<a href="https://wa.me/+919694260426/" target="_blank"><img src="https://img.shields.io/badge/whatsapp-%40+919694260426-28a8ea"></a>
+<a href="https://www.linkedin.com/in/banrossyn/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-banrossyn-informational"></a>
+<a href="mailto:banrossyn@gmail.com"><img src="https://img.shields.io/badge/Email-banrossyn%40gmail.com-blue"></a>
 
+</div>
+
+#### Full Application(InSaver) Available for sell: https://github.com/AndroidWithRossyn/InstagramDownloader
+
+
+# 
 > Note: `-- Apache License 2.0` you can't Publish any Source code without permission.
 
-# Voice Translator All Languages (JAVA)
-
-<p align="center">
-    <a href="https://www.paypal.com/paypalme/banrossyn">
-      <img src="https://user-images.githubusercontent.com/97843190/184054819-e2e80e69-df46-4d38-8769-5d591673d412.png" Width="400"/>
-    </a>
-  </p>
-<p align="center">If you like my work and Source Code is really helpful for you, <strong>Show Some Love</strong></p>
-
-# What's new:
-
-    🔥 Bug Fixed.
-    🔥 Improved user experience.
-
-
-
-## Features
+### Features
 You want to save all interesting stories or videos from social media, but its platform prevents users from doing so?
 
 Fortunately, All Video Downloader App is available for you and helps you save ALL videos from social networks in a second. You can download video from facebook, instagram, tiktok, pinterest app to your gallery and share them with others in a few simple steps.
@@ -74,7 +65,7 @@ Method 2: (using the built-in browser)
 
 
 
-# Download Now:
+## Download Now:
 
 <p align="center">
     <a href="https://github.com/OmaPrakash/AllVideoDownloader2023/raw/main/app-debug.apk">
@@ -83,7 +74,7 @@ Method 2: (using the built-in browser)
   </p>
 
 
-# Data safety:
+## Data safety:
 
 No data shared with third parties
 This app doesn't share user data with other companies or organisations.
@@ -91,7 +82,7 @@ This app doesn't share user data with other companies or organisations.
 No data collected
 This app doesn’t collect user data
 
-# Disclaimer:
+## Disclaimer:
 
 - The ownership, intellectual property rights and any other interests of the Video, Photo, Story, Reels and even Highlight on the platform belong to its publishers or owners. You should obtain permission before downloading and using the content and indicate the source of the content.
 
@@ -103,7 +94,7 @@ This app doesn’t collect user data
 
 
 
-# Screenshots:
+## Screenshots:
 
  <p align="center">
     <a>
@@ -127,22 +118,8 @@ This app doesn’t collect user data
 
   </p>
 
-# Rate the app:
 
-Please consider rating the app if you are satisfied with the product. Thank you.
 
-# License:
-
-```
-Copyright 2023 Rossyn
-Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements. 
-See the NOTICE file distributed with this work for additional information regarding copyright ownership. 
-The ASF licenses this file to you under the Apache License, Version 2.0 (the "License"); 
-you may not use this file except in compliance with the License. You may obtain a copy of the 
-License at 
-  http://www.apache.org/licenses/LICENSE-2.0 
-Unless required by applicable law or agreed to in writing, software distributed under the License is 
-distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
-express or implied. See the License for the specific language governing permissions and limitations under the License."
-  
-
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer"/>
+</p>
