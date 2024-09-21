@@ -5,10 +5,7 @@
 ![Stars](https://img.shields.io/github/stars/AndroidWithRossyn/AllVideoDownloader2023)
 ![GitHub last commit](https://img.shields.io/github/last-commit/AndroidWithRossyn/AllVideoDownloader2023)
 ![pv](https://pageview.vercel.app/?github_user=AllVideoDownloader2023)
-<a href="https://t.me/banrossyn" target="_blank"><img src="https://img.shields.io/badge/Telegram-%40banrossyn-28a8ea"></a>
-<a href="https://wa.me/+919694260426/" target="_blank"><img src="https://img.shields.io/badge/whatsapp-%40+919694260426-28a8ea"></a>
-<a href="https://www.linkedin.com/in/banrossyn/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-banrossyn-informational"></a>
-<a href="mailto:banrossyn@gmail.com"><img src="https://img.shields.io/badge/Email-banrossyn%40gmail.com-blue"></a>
+
 
 </div>
 
@@ -68,7 +65,7 @@ Method 2: (using the built-in browser)
 ## Download Now:
 
 <p align="center">
-    <a href="https://github.com/OmaPrakash/AllVideoDownloader2023/raw/main/app-debug.apk">
+    <a href="https://github.com/AndroidWithRossyn/AllVideoDownloader2023/raw/main/app-debug.apk">
       <img src="https://user-images.githubusercontent.com/97843190/183300573-ac4dd10f-b7e2-476d-a36d-7dd12ff497c7.png" width ="300" />
     </a>
   </p>
